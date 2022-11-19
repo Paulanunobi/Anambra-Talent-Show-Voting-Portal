@@ -258,17 +258,6 @@
 
                     <div class="tab-content flex flex-col overflow-hidden">
                       <div x-show="activeTab === 'tabAll'" x-transition:enter="transition-all duration-300 easy-in-out" x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]" x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]" class="is-scrollbar-hidden space-y-4 overflow-y-auto px-4 py-4">
-                        <!-- <div class="mt-8 pb-8 text-center">
-                          <img class="mx-auto w-36" src="images/illustrations/empty-girl-box.svg" alt="image">
-                          <div class="mt-5">
-                            <p class="text-base font-semibold text-slate-700 dark:text-navy-100">
-                              No any logs
-                            </p>
-                            <p class="text-slate-400 dark:text-navy-300">
-                              There are no unread logs yet
-                            </p>
-                          </div>
-                        </div> -->
                         <div class="flex items-center space-x-3">
                           <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-secondary/10 dark:bg-secondary-light/15">
                             <i class="fa fa-thumbs-up text-secondary dark:text-secondary-light" aria-hidden="true"></i>
@@ -306,39 +295,130 @@
           
           <div class="card">
             <div class="p-2 text-right">
-              <span class="tag rounded-full bg-success/10 text-success hover:bg-success/20 focus:bg-success/20 active:bg-success/25">DC325HJ</span>
+              <span class="tag rounded-full bg-success/10 text-success hover:bg-success/20 focus:bg-success/20 active:bg-success/25">Official Host</span>
               <div x-data="usePopper({placement:'bottom-end',offset:4})" @click.outside="if(isShowPopper) isShowPopper = false" class="inline-flex">
-                <!-- <button x-ref="popperRef" @click="isShowPopper = !isShowPopper" class="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25">
-                  
-                </button> -->
               </div>
             </div>
             <div class="flex grow flex-col items-center px-4 pb-5 sm:px-5">
               <div class="avatar h-20 w-20" style="width: 100%; height: auto;">
-                <img class="" style="width: 100%; height: auto; border-radius: 10px;" src="images/bob.jpg" alt="avatar">
+                <img class="" style="width: 100%; height: auto; border-radius: 10px;" src="images/1bob.jpg" alt="avatar">
               </div>
               <h3 class="pt-3 text-lg font-medium text-slate-700 dark:text-navy-100">
                 Bob-Manuel Odokwu
               </h3>
               <div class="inline-space mt-3 flex grow flex-wrap items-start">
                 <a class="tag rounded-full bg-primary/10 text-primary hover:bg-primary/20 focus:bg-primary/20 active:bg-primary/25 dark:bg-accent-light/10 dark:text-accent-light dark:hover:bg-accent-light/20 dark:focus:bg-accent-light/20 dark:active:bg-accent-light/25">
-                  Host
+                  Nollywood Actor & Politician
                 </a>
               </div>
               <p class="text-xs+">Bob-Manuel Obidimma Udokwu is a Nigerian actor, director, producer and politician. In 2014, he received the Lifetime Achievement award at the 10th Africa Movie Academy Awards. He was nominated for Best Actor in a supporting role at the 2013 Nollywood Movies Awards for his role in Adesuwa.</p>
-              
-              <!-- <div class="mt-6 grid w-full grid-cols-2 gap-2">
-                <button class="btn space-x-2 bg-primary px-0 font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                  <span>Vote</span>
-                </button>
-                <button class="btn space-x-2 bg-slate-150 px-0 font-medium text-slate-800 hover:bg-slate-200 focus:bg-slate-200 active:bg-slate-200/80 dark:bg-navy-500 dark:text-navy-50 dark:hover:bg-navy-450 dark:focus:bg-navy-450 dark:active:bg-navy-450/90">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0" fill="none" viewbox="0 0 24 24">
-                    <path stroke="currentColor" stroke-width="2" d="M5 19.111c0-2.413 1.697-4.468 4.004-4.848l.208-.035a17.134 17.134 0 015.576 0l.208.035c2.307.38 4.004 2.435 4.004 4.848C19 20.154 18.181 21 17.172 21H6.828C5.818 21 5 20.154 5 19.111zM16.083 6.938c0 2.174-1.828 3.937-4.083 3.937S7.917 9.112 7.917 6.937C7.917 4.764 9.745 3 12 3s4.083 1.763 4.083 3.938z"></path>
-                  </svg>
-                  <span> View Profile </span>
-                </button>
-              </div> -->
+            </div>
+          </div>
+
+        </div>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4 py-5">
+          
+          
+          <div class="card">
+            <div class="p-2 text-right">
+              <span class="tag rounded-full bg-success/10 text-success hover:bg-success/20 focus:bg-success/20 active:bg-success/25">Judge</span>
+              <div x-data="usePopper({placement:'bottom-end',offset:4})" @click.outside="if(isShowPopper) isShowPopper = false" class="inline-flex">
+              </div>
+            </div>
+            <div class="flex grow flex-col items-center px-4 pb-5 sm:px-5">
+              <div class="avatar h-20 w-20" style="width: 100%; height: auto;">
+                <img class="" style="width: 100%; height: auto; border-radius: 10px;" src="images/1betty.jpg" alt="avatar">
+              </div>
+              <h3 class="pt-3 text-lg font-medium text-slate-700 dark:text-navy-100">
+                Betty Bellor
+              </h3>
+              <div class="inline-space mt-3 flex grow flex-wrap items-start">
+                <a class="tag rounded-full bg-primary/10 text-primary hover:bg-primary/20 focus:bg-primary/20 active:bg-primary/25 dark:bg-accent-light/10 dark:text-accent-light dark:hover:bg-accent-light/20 dark:focus:bg-accent-light/20 dark:active:bg-accent-light/25">
+                  Nollywood Actor
+                </a>
+              </div>
+              <p class="text-xs+">Bob-Manuel Obidimma Udokwu is a Nigerian actor, director, producer and politician. In 2014, he received the Lifetime Achievement award at the 10th Africa Movie Academy Awards. He was nominated for Best Actor in a supporting role at the 2013 Nollywood Movies Awards for his role in Adesuwa.</p>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4 py-5">
+          
+          
+          <div class="card">
+            <div class="p-2 text-right">
+              <span class="tag rounded-full bg-success/10 text-success hover:bg-success/20 focus:bg-success/20 active:bg-success/25">Judge</span>
+              <div x-data="usePopper({placement:'bottom-end',offset:4})" @click.outside="if(isShowPopper) isShowPopper = false" class="inline-flex">
+              </div>
+            </div>
+            <div class="flex grow flex-col items-center px-4 pb-5 sm:px-5">
+              <div class="avatar h-20 w-20" style="width: 100%; height: auto;">
+                <img class="" style="width: 100%; height: auto; border-radius: 10px;" src="images/1prof.jpg" alt="avatar">
+              </div>
+              <h3 class="pt-3 text-lg font-medium text-slate-700 dark:text-navy-100">
+                Prof. Tracie Utoh-Ezeajugh
+              </h3>
+              <div class="inline-space mt-3 flex grow flex-wrap items-start">
+                <a class="tag rounded-full bg-primary/10 text-primary hover:bg-primary/20 focus:bg-primary/20 active:bg-primary/25 dark:bg-accent-light/10 dark:text-accent-light dark:hover:bg-accent-light/20 dark:focus:bg-accent-light/20 dark:active:bg-accent-light/25">
+                  Professor of Theatre & Films Studies Unizik
+                </a>
+              </div>
+              <p class="text-xs+">Tracie Chima Utoh-ezeajugh is a PROFESSOR in THEATRE ARTS Department, Faculty Of Arts in Nnamdi Azikiwe University.</p>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4 py-5">
+          
+          
+          <div class="card">
+            <div class="p-2 text-right">
+              <span class="tag rounded-full bg-success/10 text-success hover:bg-success/20 focus:bg-success/20 active:bg-success/25">Judge</span>
+              <div x-data="usePopper({placement:'bottom-end',offset:4})" @click.outside="if(isShowPopper) isShowPopper = false" class="inline-flex">
+              </div>
+            </div>
+            <div class="flex grow flex-col items-center px-4 pb-5 sm:px-5">
+              <div class="avatar h-20 w-20" style="width: 100%; height: auto;">
+                <img class="" style="width: 100%; height: auto; border-radius: 10px;" src="images/1harry.jpg" alt="avatar">
+              </div>
+              <h3 class="pt-3 text-lg font-medium text-slate-700 dark:text-navy-100">
+                Harry B Anyanwu
+              </h3>
+              <div class="inline-space mt-3 flex grow flex-wrap items-start">
+                <a class="tag rounded-full bg-primary/10 text-primary hover:bg-primary/20 focus:bg-primary/20 active:bg-primary/25 dark:bg-accent-light/10 dark:text-accent-light dark:hover:bg-accent-light/20 dark:focus:bg-accent-light/20 dark:active:bg-accent-light/25">
+                  Nollywood Actor & Rapper
+                </a>
+              </div>
+              <p class="text-xs+">Nigerian veteran actor and musician, Harry B Anyanwu was born on October 8, 1959. He hails from Enugu State and is popularly known for playing the role of a decorated chief in most movies. He became popular in the movie industry after he played a lead role in a Nollywood movie titled “Keke Millionaire” – his debut movie. </p>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4 py-5">
+          
+          
+          <div class="card">
+            <div class="p-2 text-right">
+              <span class="tag rounded-full bg-success/10 text-success hover:bg-success/20 focus:bg-success/20 active:bg-success/25">Judge</span>
+              <div x-data="usePopper({placement:'bottom-end',offset:4})" @click.outside="if(isShowPopper) isShowPopper = false" class="inline-flex">
+              </div>
+            </div>
+            <div class="flex grow flex-col items-center px-4 pb-5 sm:px-5">
+              <div class="avatar h-20 w-20" style="width: 100%; height: auto;">
+                <img class="" style="width: 100%; height: auto; border-radius: 10px;" src="images/1yul.jpg" alt="avatar">
+              </div>
+              <h3 class="pt-3 text-lg font-medium text-slate-700 dark:text-navy-100">
+                Yul Edochie
+              </h3>
+              <div class="inline-space mt-3 flex grow flex-wrap items-start">
+                <a class="tag rounded-full bg-primary/10 text-primary hover:bg-primary/20 focus:bg-primary/20 active:bg-primary/25 dark:bg-accent-light/10 dark:text-accent-light dark:hover:bg-accent-light/20 dark:focus:bg-accent-light/20 dark:active:bg-accent-light/25">
+                  Nollywood Actor & Director
+                </a>
+              </div>
+              <p class="text-xs+">Yul Chibuike Daniel Edochie populary known as Yul Edochie is a Nigerian actor, named after Russian actor Yul Brynner. He is from Anambra state Nigeria, the son of Nigerian actor Pete Edochie. He was raised both in Lagos and Enugu. He is the last of six children. He got married at the age of 22.</p>
             </div>
           </div>
 
