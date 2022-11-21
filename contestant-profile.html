@@ -258,17 +258,6 @@
 
                     <div class="tab-content flex flex-col overflow-hidden">
                       <div x-show="activeTab === 'tabAll'" x-transition:enter="transition-all duration-300 easy-in-out" x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]" x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]" class="is-scrollbar-hidden space-y-4 overflow-y-auto px-4 py-4">
-                        <!-- <div class="mt-8 pb-8 text-center">
-                          <img class="mx-auto w-36" src="images/illustrations/empty-girl-box.svg" alt="image">
-                          <div class="mt-5">
-                            <p class="text-base font-semibold text-slate-700 dark:text-navy-100">
-                              No any logs
-                            </p>
-                            <p class="text-slate-400 dark:text-navy-300">
-                              There are no unread logs yet
-                            </p>
-                          </div>
-                        </div> -->
                         <div class="flex items-center space-x-3">
                           <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-secondary/10 dark:bg-secondary-light/15">
                             <i class="fa fa-thumbs-up text-secondary dark:text-secondary-light" aria-hidden="true"></i>
@@ -297,7 +286,7 @@
       <main class="main-content w-full px-[var(--margin-x)] pb-8">
         <div class="flex items-center space-x-4 py-5 lg:py-6">
           <h2 class="text-xl font-medium text-slate-800 dark:text-navy-50 lg:text-2xl">
-            Contestants
+            Judges
           </h2>
         </div>
         
@@ -308,9 +297,6 @@
             <div class="p-2 text-right">
               <span class="tag rounded-full bg-success/10 text-success hover:bg-success/20 focus:bg-success/20 active:bg-success/25">{Contestant-ID}</span>
               <div x-data="usePopper({placement:'bottom-end',offset:4})" @click.outside="if(isShowPopper) isShowPopper = false" class="inline-flex">
-                <!-- <button x-ref="popperRef" @click="isShowPopper = !isShowPopper" class="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25">
-                  
-                </button> -->
               </div>
             </div>
             <div class="flex grow flex-col items-center px-4 pb-5 sm:px-5">
@@ -322,33 +308,22 @@
               </h3>
               <div class="inline-space mt-3 flex grow flex-wrap items-start">
                 <a class="tag rounded-full bg-primary/10 text-primary hover:bg-primary/20 focus:bg-primary/20 active:bg-primary/25 dark:bg-accent-light/10 dark:text-accent-light dark:hover:bg-accent-light/20 dark:focus:bg-accent-light/20 dark:active:bg-accent-light/25">
-                  {Category}
+                    {Category}
                 </a>
               </div>
               <p class="text-xs+">{Description}</p>
-              
-              <div class="mt-6 grid w-full grid-cols-2 gap-2">
-                <!-- <a href="voting-form.html"> -->
-                  <button class="btn space-x-2 bg-primary px-0 font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                    <a href="voting-form.html">
-                      <span>Vote</span>
-                    </a>
-                  </button>
-                <!-- </a> -->
-                
-                  <button class="btn space-x-2 bg-slate-150 px-0 font-medium text-slate-800 hover:bg-slate-200 focus:bg-slate-200 active:bg-slate-200/80 dark:bg-navy-500 dark:text-navy-50 dark:hover:bg-navy-450 dark:focus:bg-navy-450 dark:active:bg-navy-450/90">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0" fill="none" viewbox="0 0 24 24">
-                      <path stroke="currentColor" stroke-width="2" d="M5 19.111c0-2.413 1.697-4.468 4.004-4.848l.208-.035a17.134 17.134 0 015.576 0l.208.035c2.307.38 4.004 2.435 4.004 4.848C19 20.154 18.181 21 17.172 21H6.828C5.818 21 5 20.154 5 19.111zM16.083 6.938c0 2.174-1.828 3.937-4.083 3.937S7.917 9.112 7.917 6.937C7.917 4.764 9.745 3 12 3s4.083 1.763 4.083 3.938z"></path>
-                    </svg>
-                    <a href="contestant-profile.html">
-                    <span> View Profile </span>
-                  </a>
-                  </button>
-                
-              </div>
             </div>
+            <button class="btn space-x-2 bg-primary px-0 font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <a href="voting-form.html">
+                  <span>Vote for {username}</span>
+                </a>
+              </button>
           </div>
+
+          
+
+          
 
         </div>
       </main>
